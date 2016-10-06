@@ -5,4 +5,4 @@ my solutions of the algorithms on LeetCode
 
 - Purpose: To record the code I wrote to solve the problems.
     
-- Many solutions just met the conditions of being accepted. 
+- Many solutions just met the conditions of being accepted, it's not so good. 
