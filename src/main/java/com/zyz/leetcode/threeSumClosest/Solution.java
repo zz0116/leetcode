@@ -14,8 +14,10 @@ public class Solution {
         *   存最小
         * */
         Arrays.sort(nums);
+
         int plus = nums[0] + nums[1] + nums[nums.length-1];
         int clo = Math.abs(target - plus);
+
         for(int i=0; i<nums.length-2; i++) {
             if(i!=0 && nums[i]==nums[i-1]) {
                 continue;
@@ -31,18 +33,16 @@ public class Solution {
                     clo = Math.abs(jkClo);
                     plus = nums[i] + nums[j] + nums[k];
                 }
-                if(plus<target) {
+                if(jkClo>0) {
                     while(j<nums.length-2 && nums[j]==nums[j+1]) {
                         j++;
                     }
                     j++;
-                    continue;
-                }else if(plus>target) {
+                }else if(jkClo<0) {
                     while(k>j+2 && nums[k]==nums[k-1]) {
                         k--;
                     }
                     k--;
-                    continue;
                 }else {
                     break;
                 }
