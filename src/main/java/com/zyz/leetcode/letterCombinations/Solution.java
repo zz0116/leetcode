@@ -1,5 +1,7 @@
 package com.zyz.leetcode.letterCombinations;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -8,12 +10,26 @@ import java.util.List;
 public class Solution {
     public List<String> letterCombinations(String digits) {
         /*
-        * 2~9，其中7和9对应四个字母
-        * switch or if?
-        * 2 3 4 5 6 8是一类，不管获得哪个，都是for(0~2)
-        * 7 9是一类，for(0~3)
-        * 一个数字一层for()循环
+        * 两个问题：
+        *   1. 数字和字母如何对应
+        *   2. 取出字母如何存取
         * */
+        List<String> ret = new ArrayList<>();
+        char[] s2c = digits.toCharArray();
+
+        HashMap<Character, char[]> map = new HashMap<>();
+        map.put('0', new char[]{});
+        map.put('1', new char[]{});
+        map.put('2', new char[]{'a', 'b', 'c'});
+        map.put('3', new char[]{'d', 'e', 'f'});
+        map.put('4', new char[]{'g', 'h', 'i'});
+        map.put('5', new char[]{'j', 'k', 'l'});
+        map.put('6', new char[]{'m', 'n', 'o'});
+        map.put('7', new char[]{'p', 'q', 'r', 's'});
+        map.put('8', new char[]{'t', 'y', 'v'});
+        map.put('9', new char[]{'w', 'x', 'y', 'z'});
+
+
         return null;
     }
 }
