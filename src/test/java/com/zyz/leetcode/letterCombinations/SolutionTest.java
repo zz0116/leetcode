@@ -10,7 +10,12 @@ import static org.junit.Assert.*;
 public class SolutionTest {
     @Test
     public void letterCombinations() throws Exception {
+        Solution solution = new Solution();
 
+        System.out.println(solution.letterCombinations("4"));
+        System.out.println(solution.letterCombinations("43"));
+        System.out.println(solution.letterCombinations("432"));
+        System.out.println(solution.letterCombinations("4389"));
     }
 
 }
