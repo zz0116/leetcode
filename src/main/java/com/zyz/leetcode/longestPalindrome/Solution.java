@@ -1,7 +1,7 @@
 package com.zyz.leetcode.longestPalindrome;
 
 /**
- * Created by Zhang Yuangzhuo on 2016/10/1.
+ * Created by Zhang Yuanzhuo on 2016/10/1.
  */
 public class Solution {
     public String longestPalindrome(String s) {

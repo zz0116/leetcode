@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by Zhang Yuangzhuo on 2016/10/3.
+ * Created by Zhang Yuanzhuo on 2016/10/3.
  */
 public class SolutionTest {
     @Test

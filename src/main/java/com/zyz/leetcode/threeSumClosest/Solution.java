@@ -3,7 +3,7 @@ package com.zyz.leetcode.threeSumClosest;
 import java.util.Arrays;
 
 /**
- * Created by Zhang Yuangzhuo on 2016/10/6.
+ * Created by Zhang Yuanzhuo on 2016/10/6.
  */
 public class Solution {
     public int threeSumClosest(int[] nums, int target) {

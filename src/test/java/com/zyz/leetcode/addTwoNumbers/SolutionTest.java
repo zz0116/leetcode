@@ -6,7 +6,7 @@ import com.zyz.leetcode.addTwoNumbers.Solution.ListNode;
 import static org.junit.Assert.*;
 
 /**
- * Created by Zhang Yuangzhuo on 2016/9/30.
+ * Created by Zhang Yuanzhuo on 2016/9/30.
  */
 public class SolutionTest {
     @Test

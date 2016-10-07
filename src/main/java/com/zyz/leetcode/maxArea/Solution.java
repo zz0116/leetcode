@@ -1,7 +1,7 @@
 package com.zyz.leetcode.maxArea;
 
 /**
- * Created by Zhang Yuangzhuo on 2016/10/2.
+ * Created by Zhang Yuanzhuo on 2016/10/2.
  */
 public class Solution {
     public int maxArea(int[] height) {

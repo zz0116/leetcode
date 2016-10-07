@@ -1,7 +1,7 @@
 package com.zyz.leetcode.romanToInt;
 
 /**
- * Created by Zhang Yuangzhuo on 2016/9/30.
+ * Created by Zhang Yuanzhuo on 2016/9/30.
  */
 public class Solution {
     public int romanToInt(String s) {

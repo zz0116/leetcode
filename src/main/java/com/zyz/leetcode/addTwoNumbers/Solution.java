@@ -3,7 +3,7 @@ package com.zyz.leetcode.addTwoNumbers;
 import jdk.nashorn.internal.objects.NativeUint8Array;
 
 /**
- * Created by Zhang Yuangzhuo on 2016/9/30.
+ * Created by Zhang Yuanzhuo on 2016/9/30.
  */
 public class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

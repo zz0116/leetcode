@@ -3,7 +3,7 @@ package com.zyz.leetcode.lengthOfLongestSubstring;
 import java.util.*;
 
 /**
- * Created by Zhang Yuangzhuo on 2016/10/1.
+ * Created by Zhang Yuanzhuo on 2016/10/1.
  */
 public class Solution {
     public int lengthOfLongestSubstring(String s) {

@@ -1,7 +1,7 @@
 package com.zyz.leetcode.removeNthFromEnd;
 
 /**
- * Created by Zhang Yuangzhuo on 2016/10/1.
+ * Created by Zhang Yuanzhuo on 2016/10/1.
  */
 public class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {

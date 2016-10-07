@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.TreeSet;
 
 /**
- * Created by Zhang Yuangzhuo on 2016/10/3.
+ * Created by Zhang Yuanzhuo on 2016/10/3.
  */
 public class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
