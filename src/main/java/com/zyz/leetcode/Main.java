@@ -2,16 +2,30 @@ package com.zyz.leetcode;
 
 import java.util.HashMap;
 import java.util.Scanner;
+import java.util.Stack;
 import java.util.TreeSet;
 
 public class Main {
 
     public static void main(String[] args) {
-        HashMap<Character, char[]> map = new HashMap<>();
-        map.put('0', new char[]{'a'});
-        map.put('1', new char[]{'b'});
-        map.put('2', new char[]{'c'});
+        Stack<Character> stack = new Stack<>();
 
-        System.out.println(map.values());
+        stack.push('a');
+        stack.push('c');
+        stack.push('b');
+
+        System.out.println(stack.pop());
+        System.out.println(stack.lastElement());
+        System.out.println(stack.peek());
+        System.out.println(stack.firstElement());
+        System.out.println(stack.search('a'));
+        System.out.println(stack.search('b'));
+        System.out.println(stack.search('c'));
+        System.out.println(stack.add('x'));
+        System.out.println(stack.peek());
+        System.out.println(stack.capacity());
+        System.out.println(stack.size());
+        stack.setSize(20);
+        System.out.println(stack.capacity());
     }
 }
