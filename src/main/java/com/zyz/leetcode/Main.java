@@ -1,31 +1,29 @@
 package com.zyz.leetcode;
 
-import java.util.HashMap;
-import java.util.Scanner;
-import java.util.Stack;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        Stack<Character> stack = new Stack<>();
+        String s = "";
+        List<String> ret = new LinkedList<>();
 
-        stack.push('a');
-        stack.push('c');
-        stack.push('b');
+        s += "2";
+        s += '2';
+        s += 'c';
+        s += "c";
+        s += 'c';
 
-        System.out.println(stack.pop());
-        System.out.println(stack.lastElement());
-        System.out.println(stack.peek());
-        System.out.println(stack.firstElement());
-        System.out.println(stack.search('a'));
-        System.out.println(stack.search('b'));
-        System.out.println(stack.search('c'));
-        System.out.println(stack.add('x'));
-        System.out.println(stack.peek());
-        System.out.println(stack.capacity());
-        System.out.println(stack.size());
-        stack.setSize(20);
-        System.out.println(stack.capacity());
+        ret.add(s);
+        ret.get(0);
+
+        String s1 = new String(s);
+        s1 += "d";
+
+        System.out.println(s);
+        System.out.println(s.length()-s.replace("c","").length());
+        System.out.println(s);
+        System.out.println(ret);
+        System.out.println(s1);
     }
 }

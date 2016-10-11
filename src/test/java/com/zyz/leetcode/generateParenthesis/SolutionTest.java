@@ -10,7 +10,9 @@ import static org.junit.Assert.*;
 public class SolutionTest {
     @Test
     public void generateParenthesis() throws Exception {
+        Solution solution = new Solution();
 
+        System.out.println(solution.generateParenthesis(3));
     }
 
 }
