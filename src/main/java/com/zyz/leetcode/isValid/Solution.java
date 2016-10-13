@@ -11,27 +11,27 @@ public class Solution {
         Stack<Character> stack = new Stack<>();
 
         char[] s2chars = s.toCharArray();
-        for(Character c : s2chars) {
-            if("([{".contains(String.valueOf(c))) {
+        for (Character c : s2chars) {
+            if ("([{".contains(String.valueOf(c))) {
                 stack.push(c);
-            }else if(!stack.isEmpty() && isCorr(stack.lastElement(), c)) {
+            } else if (!stack.isEmpty() && isCorr(stack.lastElement(), c)) {
                 stack.pop();
-            }else {
+            } else {
                 ret = false;
             }
         }
-        if(!stack.isEmpty()) {
+        if (!stack.isEmpty()) {
             ret = false;
         }
         return ret;
     }
 
     public boolean isCorr(Character lastElement, Character c) {
-        if(lastElement == '(' && c == ')') {
+        if (lastElement == '(' && c == ')') {
             return true;
-        }else if(lastElement == '[' && c == ']') {
+        } else if (lastElement == '[' && c == ']') {
             return true;
-        }else if(lastElement == '{' && c == '}') {
+        } else if (lastElement == '{' && c == '}') {
             return true;
         }
         return false;

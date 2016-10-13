@@ -8,61 +8,61 @@ public class Solution {
         int k = num / 1000;
         int h = (num % 1000) / 100;
         int t = (num % 100) / 10;
-        int i = num  % 10;
+        int i = num % 10;
 
         String s = "";
 
-        for(int n=0; n<k; n++) {
+        for (int n = 0; n < k; n++) {
             s += mapping(1000);
         }
 
-        if(h<4) {
-            for(int n=0; n<h; n++) {
+        if (h < 4) {
+            for (int n = 0; n < h; n++) {
                 s += mapping(100);
             }
-        }else if(h==4) {
+        } else if (h == 4) {
             s += mapping(100);
             s += mapping(500);
-        }else if(h<9) {
+        } else if (h < 9) {
             s += mapping(500);
-            for(int n=0; n<h-5; n++) {
+            for (int n = 0; n < h - 5; n++) {
                 s += mapping(100);
             }
-        }else {
+        } else {
             s += mapping(100);
             s += mapping(1000);
         }
 
-        if(t<4) {
-            for(int n=0; n<t; n++) {
+        if (t < 4) {
+            for (int n = 0; n < t; n++) {
                 s += mapping(10);
             }
-        }else if(t==4) {
+        } else if (t == 4) {
             s += mapping(10);
             s += mapping(50);
-        }else if(t<9) {
+        } else if (t < 9) {
             s += mapping(50);
-            for(int n=0; n<t-5; n++) {
+            for (int n = 0; n < t - 5; n++) {
                 s += mapping(10);
             }
-        }else {
+        } else {
             s += mapping(10);
             s += mapping(100);
         }
 
-        if(i<4) {
-            for(int n=0; n<i; n++) {
+        if (i < 4) {
+            for (int n = 0; n < i; n++) {
                 s += mapping(1);
             }
-        }else if(i==4) {
+        } else if (i == 4) {
             s += mapping(1);
             s += mapping(5);
-        }else if(i<9) {
+        } else if (i < 9) {
             s += mapping(5);
-            for(int n=0; n<i-5; n++) {
+            for (int n = 0; n < i - 5; n++) {
                 s += mapping(1);
             }
-        }else {
+        } else {
             s += mapping(1);
             s += mapping(10);
         }

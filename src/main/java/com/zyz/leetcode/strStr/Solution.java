@@ -5,8 +5,7 @@ package com.zyz.leetcode.strStr;
  */
 public class Solution {
     public int strStr(String haystack, String needle) {
-        int res = 0;
 
-        return res;
+        return haystack.indexOf(needle);
     }
 }

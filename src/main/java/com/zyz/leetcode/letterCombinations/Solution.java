@@ -59,27 +59,27 @@ public class Solution {
         *   stop=digits.length()为迭代次数
         *   j[i]为i,j,k,l
         * */
-        if(digits==null||"".equals(digits)) {
+        if (digits == null || "".equals(digits)) {
             return ret;
         }
 
         String[] d2l = new String[digits.length()];
         int[] j = new int[digits.length()];
-        for(int i=0; i<digits.length(); i++) {
+        for (int i = 0; i < digits.length(); i++) {
             d2l[i] = digit2letter(digits.charAt(i));
         }
         return d2s(d2l, 0, digits.length(), ret, j);
     }
 
     public List<String> d2s(String[] d2l, int i, int stop, List<String> ret, int[] j) {
-        for(j[i]=0; j[i]<d2l[i].length(); j[i]++) {
-            if(i==stop-1) {
+        for (j[i] = 0; j[i] < d2l[i].length(); j[i]++) {
+            if (i == stop - 1) {
                 String s = "";
-                for(int dNo=0; dNo<stop; dNo++) {
+                for (int dNo = 0; dNo < stop; dNo++) {
                     s += d2l[dNo].charAt(j[dNo]);
                 }
                 ret.add(s);
-            }else if(i<stop-1) {
+            } else if (i < stop - 1) {
                 d2s(d2l, i + 1, stop, ret, j);
             }
         }
@@ -87,7 +87,7 @@ public class Solution {
     }
 
     public String digit2letter(char digit) {
-        switch(digit) {
+        switch (digit) {
             case '0':
                 return "";
             case '1':

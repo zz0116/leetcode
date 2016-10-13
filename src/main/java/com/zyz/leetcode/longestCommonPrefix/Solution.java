@@ -1,7 +1,5 @@
 package com.zyz.leetcode.longestCommonPrefix;
 
-import java.util.Scanner;
-
 /**
  * Created by Zhang Yuanzhuo on 2016/9/30.
  */
@@ -18,28 +16,28 @@ public class Solution {
         */
         int strNo;
 
-        if(strs.length==0) {
+        if (strs.length == 0) {
             return "";
         }
-        if(strs.length==1) {
+        if (strs.length == 1) {
             return strs[0];
         }
 
         int commNo = strs[0].length();
-        for(int i=1; i<strs.length; i++) {
-            if(strs[i].length()<commNo) {
+        for (int i = 1; i < strs.length; i++) {
+            if (strs[i].length() < commNo) {
                 commNo = strs[i].length();
             }
         }
-        if(commNo==0) {
+        if (commNo == 0) {
             return "";
         }
 
-        for(strNo=1; strNo<strs.length; strNo++) {
+        for (strNo = 1; strNo < strs.length; strNo++) {
 
-            for(int n=1; n<=commNo; n++) {
-                if(!strs[strNo-1].substring(0, n).equals(strs[strNo].substring(0, n))) {
-                    commNo = n-1;
+            for (int n = 1; n <= commNo; n++) {
+                if (!strs[strNo - 1].substring(0, n).equals(strs[strNo].substring(0, n))) {
+                    commNo = n - 1;
                     break;
                 }
             }

@@ -15,35 +15,35 @@ public class Solution {
         * */
         Arrays.sort(nums);
 
-        int plus = nums[0] + nums[1] + nums[nums.length-1];
+        int plus = nums[0] + nums[1] + nums[nums.length - 1];
         int clo = Math.abs(target - plus);
 
-        for(int i=0; i<nums.length-2; i++) {
-            if(i!=0 && nums[i]==nums[i-1]) {
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (i != 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
             int ans = target - nums[i];
 
-            int j = i+1;
-            int k = nums.length-1;
+            int j = i + 1;
+            int k = nums.length - 1;
             int jkClo;
-            while(j<k) {
+            while (j < k) {
                 jkClo = ans - (nums[j] + nums[k]);
-                if(clo>=Math.abs(jkClo)) {
+                if (clo >= Math.abs(jkClo)) {
                     clo = Math.abs(jkClo);
                     plus = nums[i] + nums[j] + nums[k];
                 }
-                if(jkClo>0) {
-                    while(j<nums.length-2 && nums[j]==nums[j+1]) {
+                if (jkClo > 0) {
+                    while (j < nums.length - 2 && nums[j] == nums[j + 1]) {
                         j++;
                     }
                     j++;
-                }else if(jkClo<0) {
-                    while(k>j+2 && nums[k]==nums[k-1]) {
+                } else if (jkClo < 0) {
+                    while (k > j + 2 && nums[k] == nums[k - 1]) {
                         k--;
                     }
                     k--;
-                }else {
+                } else {
                     break;
                 }
             }

@@ -6,13 +6,13 @@ package com.zyz.leetcode.swapPairs;
 public class Solution {
     public ListNode swapPairs(ListNode head) {
         ListNode tail = head;
-        if(tail==null) {
+        if (tail == null) {
+            return null;
+        }
+        if (tail.next == null) {
             return head;
         }
-        if(tail.next==null) {
-            return head;
-        }
-        while(tail!=null && tail.next!=null) {
+        while (tail != null && tail.next != null) {
             int temp;
             temp = tail.val;
             tail.val = tail.next.val;

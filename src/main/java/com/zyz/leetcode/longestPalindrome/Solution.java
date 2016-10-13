@@ -5,10 +5,10 @@ package com.zyz.leetcode.longestPalindrome;
  */
 public class Solution {
     public String longestPalindrome(String s) {
-        if("".equals(s)) {
+        if ("".equals(s)) {
             return "";
         }
-        if(s.length()==1) {
+        if (s.length() == 1) {
             return s;
         }
 
@@ -29,7 +29,7 @@ public class Solution {
         * @Param j-->t[], tail of the slice
         * @Param i-->h[], head of the slice
         * */
-        int i,j;
+        int i, j;
         int[] h = new int[50];
         int h_i = 0;
         int[] t = new int[50];
@@ -38,23 +38,22 @@ public class Solution {
         int p_i = 0;
 
         boolean isPLD;
-        for(i=0; i<s2c.length; i++) {
-            if(p[0]!=0 && s2c.length-1-i <= p[p_i-1]) {
+        for (i = 0; i < s2c.length; i++) {
+            if (p[0] != 0 && s2c.length - 1 - i <= p[p_i - 1]) {
                 break;
             }
-            for(j=s2c.length-1; j>i; j--) {
-                if (p[0]!=0 && j-i <= p[p_i-1]) {
+            for (j = s2c.length - 1; j > i; j--) {
+                if (p[0] != 0 && j - i <= p[p_i - 1]) {
                     break;
                 }
 
                 isPLD = true;
                 int m = i;
                 int n = j;
-                Slice:
                 for (; m <= (j - i) / 2 + i; m++, n--) {
                     if (s2c[m] != s2c[n]) {
                         isPLD = false;
-                        break Slice;
+                        break;
                     }
                 }
                 if (isPLD) {
@@ -67,6 +66,6 @@ public class Solution {
                 }
             }
         }
-        return s.substring(h[h_i-1], t[t_i-1]+1);
+        return s.substring(h[h_i - 1], t[t_i - 1] + 1);
     }
 }

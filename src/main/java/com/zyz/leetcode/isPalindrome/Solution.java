@@ -28,20 +28,20 @@ public class Solution {
         char[] chars = s.toCharArray();
         String ret = new String();
 
-        if('-' == chars[0]) {
+        if ('-' == chars[0]) {
             return false;
-        }else {
-            for(int j=1; j<=chars.length; j++) {
-                ret += chars[chars.length-j];
+        } else {
+            for (int j = 1; j <= chars.length; j++) {
+                ret += chars[chars.length - j];
             }
         }
 
         long result = Long.parseLong(ret);
-        if(result<-2147483648||result>2147483647) {
+        if (result < -2147483648 || result > 2147483647) {
             return false;
         }
 
-        if(x==result) {
+        if (x == result) {
             return true;
         }
         return false;

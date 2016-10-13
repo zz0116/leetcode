@@ -5,7 +5,7 @@ package com.zyz.leetcode.romanToInt;
  */
 public class Solution {
     public int romanToInt(String s) {
-        if("".equals(s)) {
+        if ("".equals(s)) {
             return 0;
         }
 
@@ -13,16 +13,16 @@ public class Solution {
         int[] c2int = new int[s2chars.length];
 
         c2int[0] = mapping(s2chars[0]);
-        if(c2int.length==1) {
+        if (c2int.length == 1) {
             return c2int[0];
         }
 
         int sum = c2int[0];
-        for(int i=1; i<s2chars.length; i++) {
+        for (int i = 1; i < s2chars.length; i++) {
             c2int[i] = mapping(s2chars[i]);
-            if(c2int[i]>c2int[i-1] && (c2int[i-1] == 1 ||c2int[i-1] == 10 ||c2int[i-1] == 100)) {
-                sum = sum + c2int[i] - 2*c2int[i-1];
-            }else {
+            if (c2int[i] > c2int[i - 1] && (c2int[i - 1] == 1 || c2int[i - 1] == 10 || c2int[i - 1] == 100)) {
+                sum = sum + c2int[i] - 2 * c2int[i - 1];
+            } else {
                 sum += c2int[i];
             }
         }
@@ -30,7 +30,7 @@ public class Solution {
     }
 
     public int mapping(char c) {
-        switch(c) {
+        switch (c) {
             case 'I':
                 return 1;
             case 'V':

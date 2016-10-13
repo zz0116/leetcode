@@ -19,17 +19,17 @@ public class Solution {
         int h, b;
         int maxA = 0;
         int l = 0;
-        int r = height.length-1;
-        while (r>l) {
+        int r = height.length - 1;
+        while (r > l) {
             b = r - l;
-            if(height[l] < height[r]) {
+            if (height[l] < height[r]) {
                 h = height[l];
                 l++;
-            }else {
+            } else {
                 h = height[r];
                 r--;
             }
-            if(maxA<(h*b)) {
+            if (maxA < (h * b)) {
                 maxA = h * b;
             }
         }

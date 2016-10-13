@@ -1,16 +1,16 @@
 package com.zyz.leetcode.lengthOfLongestSubstring;
 
-import java.util.*;
+import java.util.TreeSet;
 
 /**
  * Created by Zhang Yuanzhuo on 2016/10/1.
  */
 public class Solution {
     public int lengthOfLongestSubstring(String s) {
-        if("".equals(s)) {
+        if ("".equals(s)) {
             return 0;
         }
-        if(s.length()==1) {
+        if (s.length() == 1) {
             return 1;
         }
         /*转换成字符数组*/
@@ -24,20 +24,20 @@ public class Solution {
         boolean unique;
         TreeSet<Integer> ret = new TreeSet<>();
         ret.add(1);
-        for(int i=0; i<s2c.length-1; i++) {
+        for (int i = 0; i < s2c.length - 1; i++) {
             Slice:
-            for(int j=i+ret.last(); j<s2c.length; j++) {
+            for (int j = i + ret.last(); j < s2c.length; j++) {
 
                 unique = true;
-                for(int p=i; p<=j-1; p++) {
-                    for(int q=p+1; q<=j; q++) {
-                        if(s2c[p]==s2c[q]) {
+                for (int p = i; p <= j - 1; p++) {
+                    for (int q = p + 1; q <= j; q++) {
+                        if (s2c[p] == s2c[q]) {
                             unique = false;
                             break Slice;
                         }
                     }
                 }
-                if(unique) {
+                if (unique) {
                     ret.add(j - i + 1);
                 }
 

@@ -9,24 +9,24 @@ public class Solution {
 
         String s = String.valueOf(x);
         char[] chars = s.toCharArray();
-        String ret = new String();
+        String ret = "";
 
-        if('-'==chars[0]) {
-            ret="-";
-            for(int j=1; j<chars.length; j++) {
-                ret += chars[chars.length-j];
+        if ('-' == chars[0]) {
+            ret = "-";
+            for (int j = 1; j < chars.length; j++) {
+                ret += chars[chars.length - j];
             }
-        }else {
-            for(int j=1; j<=chars.length; j++) {
-                ret += chars[chars.length-j];
+        } else {
+            for (int j = 1; j <= chars.length; j++) {
+                ret += chars[chars.length - j];
             }
         }
 
         result = Long.parseLong(ret);
-        if(result<-2147483648||result>2147483647) {
+        if (result < -2147483648 || result > 2147483647) {
             return 0;
         }
 
-        return (int)result;
+        return (int) result;
     }
 }

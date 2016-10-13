@@ -6,12 +6,12 @@ package com.zyz.leetcode.removeNthFromEnd;
 public class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode temp = head;
-        int len=0;
-        while(temp.next!=null) {
+        int len = 0;
+        while (temp.next != null) {
             len++;
             temp = temp.next;
         }
-        if(len==1) {
+        if (len == 1) {
             return null;
         }
 
@@ -19,16 +19,15 @@ public class Solution {
         int index = len - n;
 
         /*删除节点*/
-        if(index==0) {
+        if (index == 0) {
             return head.next;
         }
         ListNode prev = head;
-        while(--index != 0) {
+        while (--index != 0) {
             prev = prev.next;
         }
         ListNode del = prev.next;
-        ListNode after = del.next;
-        prev.next = after;
+        prev.next = del.next;
 
 
         return head;
