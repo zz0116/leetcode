@@ -1,9 +1,6 @@
 package com.zyz.leetcode.addTwoNumbers;
 
 import org.junit.Test;
-import com.zyz.leetcode.addTwoNumbers.Solution.ListNode;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by Zhang Yuanzhuo on 2016/9/30.
