@@ -3,10 +3,13 @@ package com.zyz.leetcode;
 public class Main {
 
     public static void main(String[] args) {
-        int i = -2;
-        int i1 = i;
+        String s;
+        s = "123";
+        s = "312";
+        s = "111";
+        s = 1 + "3222";
 
-        i1 = -i;
-        System.out.println(i1);
+
+        System.out.println(s);
     }
 }

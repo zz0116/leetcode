@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="concurrency" />
         <module name="leetcode" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="concurrency" target="1.8" />
       <module name="leetcode" target="1.8" />
     </bytecodeTargetLevel>
   </component>
