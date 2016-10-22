@@ -13,6 +13,7 @@ public class SolutionTest {
         Solution solution = new Solution();
 
         System.out.println(solution.permute(new int[]{1, 2, 3}));
+        System.out.println(solution.permute(new int[]{5,4,6,2}));
     }
 
 }

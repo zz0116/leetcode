@@ -12,11 +12,18 @@ public class Solution {
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(nums);
         res.add(store(nums));
-        int n = (int) Math.pow(2, nums.length);
+        int n = factorial(nums.length, 1);
         while(n-- > 1) {
             helper(nums, res);
         }
         return res;
+    }
+
+    public int factorial(int length, int result) {
+        if(length==1) {
+            return result;
+        }
+        return factorial(length-1, result*length);
     }
 
     public void helper(int[] nums, List<List<Integer>> res) {
@@ -24,31 +31,41 @@ public class Solution {
             if(i!=0 && nums[i-1]<nums[i]) {
                 for(int j=i; j<nums.length; j++) {
                     if(nums[j]<nums[i-1]) {
-                        nums = reverse(nums, i-1, j-1);
+                        nums = bubble(swap(nums, i-1, j-1), i);
                         res.add(store(nums));
-                        break;
+                        return;
                     }
                     if(j==nums.length-1) {
-                        nums = reverse(nums, i-1, j);
+                        nums = bubble(swap(nums, i-1, j), i);
                         res.add(store(nums));
-                        break;
+                        return;
                     }
                 }
             }
         }
     }
 
-    public int[] reverse(int[] nums, int i, int j) {
+    public int[] swap(int[] nums, int i, int j) {
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
-        for(int p=i+1; p<nums.length; p++) {
-            for(int q=p+1; q<nums.length; q++) {
-                if(nums[p]>nums[q]) {
+        return nums;
+    }
 
+    public int[] bubble(int[] nums, int i) {
+        if(nums.length-1<i+1) {
+            return nums;
+        }
+        boolean swapped;
+        do {
+            swapped = false;
+            for(int p=i+1; p<nums.length; p++) {
+                if(nums[p-1]>nums[p]) {
+                    swap(nums, p-1, p);
+                    swapped = true;
                 }
             }
-        }
+        }while(swapped);
         return nums;
     }
 
