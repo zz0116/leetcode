@@ -14,6 +14,7 @@ public class SolutionTest {
 
         System.out.println(solution.permute(new int[]{1, 2, 3}));
         System.out.println(solution.permute(new int[]{5,4,6,2}));
+        System.out.println(solution.permute(new int[]{1,1,2}));
     }
 
 }
