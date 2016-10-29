@@ -5,8 +5,26 @@ package com.zyz.leetcode.rotateRight;
  */
 public class Solution {
     public ListNode rotateRight(ListNode head, int k) {
-        ListNode res = new ListNode(0);
-
+        ListNode res;
+        if(head==null) {
+            return null;
+        }
+        ListNode tail = head;
+        int len = 1;
+        while(tail.next!=null) {
+            len++;
+            tail = tail.next;
+        }
+        tail.next = head;
+        k = len - k%len;
+        while(k-->0) {
+            head = head.next;
+        }
+        res = head;
+        while(len-->1) {
+            head = head.next;
+        }
+        head.next = null;
         return res;
     }
 }
