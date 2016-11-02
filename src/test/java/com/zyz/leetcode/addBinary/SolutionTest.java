@@ -10,8 +10,10 @@ public class SolutionTest {
     public void addBinary() throws Exception {
         Solution solution = new Solution();
 
-//        System.out.println(solution.addBinary("111", "111"));
+        System.out.println(solution.addBinary("111", "111"));
         System.out.println(solution.addBinary("101", "111"));
+        System.out.println(solution.addBinary("1", "1"));
+        System.out.println(solution.addBinary("11", "1"));
     }
 
 }

@@ -6,36 +6,58 @@ package com.zyz.leetcode.addBinary;
 public class Solution {
     public String addBinary(String a, String b) {
         String res = "";
-        int m = a.length();
-        int n = b.length();
-        int max = Math.max(m, n)+1;
-        int[] temp = new int[max];
-        int i;
-//        for(i=0; i<Math.min(m, n); i++) {
-//            if((int)a.charAt(m-1-i)+(int)b.charAt(n-1-i)+temp[i]<2) {
-//                temp[i] = (int)a.charAt(m-1-i)+(int)b.charAt(n-1-i)+temp[i];
-//            }else {
-//                temp[i] = (int)a.charAt(m-1-i)+(int)b.charAt(n-1-i)-2;
-//                temp[i+1] = 1;
-//            }
-//        }
-//        if(m>n) {
-//            while(i<m) {
-//                temp[i] += a.charAt(m-1-i);
-//                i++;
-//            }
-//        }else {
-//            while(i<n) {
-//                temp[i] += b.charAt(n-1-i);
-//                i++;
-//            }
-//        }
-//        if(temp[max-1]==1) {
-//            res += "1";
-//        }
-//        for(int j=max-2; j>=0; j--) {
-//            res += temp[j];
-//        }
+        if("0".equals(a)) {
+            return b;
+        }else if("0".equals(b)) {
+            return a;
+        }
+        String s1, s2;
+        if(a.length()>b.length()) {
+            s1 = a;
+            s2 = b;
+        }else {
+            s1 = b;
+            s2 = a;
+        }
+        int m = s1.length();
+        int n = s2.length();
+        int[] sum = new int[m+n];
+        int[] a2l = reverse(s1.toCharArray());
+        int[] b2l = reverse(s2.toCharArray());
+        for(int i=0; i<n; i++) {
+            int temp = a2l[i] + b2l[i] + sum[i];
+            if(temp<2) {
+                sum[i] = temp;
+            }else {
+                sum[i] = temp - 2;
+                sum[i+1] = 1;
+            }
+        }
+        for(int i=n; i<m; i++) {
+            int temp = sum[i] + a2l[i];
+            if(temp<2) {
+                sum[i] = temp;
+            }else {
+                sum[i] = temp - 2;
+                sum[i+1] = 1;
+            }
+        }
+        int tail = sum.length-1;
+        while(sum[tail]==0) {
+            tail--;
+        }
+        for(int i=tail; i>=0; i--) {
+            res += sum[i];
+        }
         return res;
+    }
+
+    private int[] reverse(char[] chars) {
+        int n = chars.length;
+        int[] rev = new int[n];
+        for(int i=n-1; i>=0; i--) {
+            rev[n-1-i] = chars[i]-'0';
+        }
+        return rev;
     }
 }
