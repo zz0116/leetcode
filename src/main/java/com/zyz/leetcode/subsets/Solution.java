@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by ZhangYuanzhuo on 2016/11/7.
+ * Created by ZhangYuanzhuo on 2016/11/8.
  */
 public class Solution {
     public List<List<Integer>> subsets(int[] nums) {
