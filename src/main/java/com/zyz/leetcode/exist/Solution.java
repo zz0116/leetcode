@@ -9,12 +9,15 @@ public class Solution {
         int n = board[0].length;
         boolean[][] used = new boolean[m][n];
         char[] chars = word.toCharArray();
-        char head = chars[0];
+        char firstC = chars[0];
         for(int i=0; i<m; i++) {
             for(int j=0; j<n; j++) {
-                if(head == board[i][j]) {
+                if(firstC == board[i][j]) {
                     used[i][j] = true;
-                    if(findNext(1, i, j, chars, used, m, n, board)) {
+                    if(chars.length==1) {
+                        return true;
+                    }
+                    if(findRest(1, i, j, chars, used, m, n, board)) {
                         return true;
                     }
                     used[i][j] = false;
@@ -24,87 +27,47 @@ public class Solution {
         return false;
     }
 
-    private boolean findNext(int i, int lastI, int lastJ, char[] chars, boolean[][] used, int m, int n, char[][] board) {
-        if(chars[i]==upItem(lastI, lastJ, used, m, board)) {
-            lastI--;
-            used[lastI][lastJ] = true;
+    private boolean findRest(int i, int lastI, int lastJ, char[] chars, boolean[][] used, int m, int n, char[][] board) {
+        if(lastI-1>=0 && chars[i]==board[lastI-1][lastJ] && !used[lastI-1][lastJ]) {
+            used[lastI-1][lastJ] = true;
             if(i==chars.length-1) {
                 return true;
             }
-            if(findNext(i++, lastI, lastJ, chars, used, m, n, board)) {
+            if(findRest(i+1, lastI-1, lastJ, chars, used, m, n, board)) {
                 return true;
             }
-            used[lastI][lastJ] = false;
-            lastI++;
+            used[lastI-1][lastJ] = false;
         }
-        if(chars[i]==downItem(lastI, lastJ, used, m, board)) {
-            lastI++;
-            used[lastI][lastJ] = true;
+        if(lastI+1<m && chars[i]==board[lastI+1][lastJ] && !used[lastI+1][lastJ]) {
+            used[lastI+1][lastJ] = true;
             if(i==chars.length-1) {
                 return true;
             }
-            if(findNext(i++, lastI, lastJ, chars, used, m, n, board)) {
+            if(findRest(i+1, lastI+1, lastJ, chars, used, m, n, board)) {
                 return true;
             }
-            used[lastI][lastJ] = false;
-            lastI--;
+            used[lastI+1][lastJ] = false;
         }
-        if(chars[i]==leftItem(lastI, lastJ, used, n, board)) {
-            lastJ--;
-            used[lastI][lastJ] = true;
+        if(lastJ-1>=0 && chars[i]==board[lastI][lastJ-1] && !used[lastI][lastJ-1]) {
+            used[lastI][lastJ-1] = true;
             if(i==chars.length-1) {
                 return true;
             }
-            if(findNext(i++, lastI, lastJ, chars, used, m, n, board)) {
+            if(findRest(i+1, lastI, lastJ-1, chars, used, m, n, board)) {
                 return true;
             }
-            used[lastI][lastJ] = false;
-            lastJ++;
+            used[lastI][lastJ-1] = false;
         }
-        if(chars[i]==rightItem(lastI, lastJ, used, n, board)) {
-            lastJ++;
-            used[lastI][lastJ] = true;
+        if(lastJ+1<n && chars[i]==board[lastI][lastJ+1] && !used[lastI][lastJ+1]) {
+            used[lastI][lastJ+1] = true;
             if(i==chars.length-1) {
                 return true;
             }
-            if(findNext(i++, lastI, lastJ, chars, used, m, n, board)) {
+            if(findRest(i+1, lastI, lastJ+1, chars, used, m, n, board)) {
                 return true;
             }
-            used[lastI][lastJ] = false;
-            lastJ--;
+            used[lastI][lastJ+1] = false;
         }
         return false;
-    }
-
-    private char upItem(int lastI, int lastJ, boolean[][] used, int m, char[][] board) {
-        lastI--;
-        if(lastI>=0 && lastI<m && !used[lastI][lastJ]) {
-            return board[lastI][lastJ];
-        }
-        return '0';
-    }
-
-    private char downItem(int lastI, int lastJ, boolean[][] used, int m, char[][] board) {
-        lastI++;
-        if(lastI>=0 && lastI<m && !used[lastI][lastJ]) {
-            return board[lastI][lastJ];
-        }
-        return '0';
-    }
-
-    private char leftItem(int lastI, int lastJ, boolean[][] used, int n, char[][] board) {
-        lastJ--;
-        if(lastJ>=0 && lastJ<n && !used[lastI][lastJ]) {
-            return board[lastI][lastJ];
-        }
-        return '0';
-    }
-
-    private char rightItem(int lastI, int lastJ, boolean[][] used, int n, char[][] board) {
-        lastJ++;
-        if(lastJ>=0 && lastJ<n && !used[lastI][lastJ]) {
-            return board[lastI][lastJ];
-        }
-        return '0';
     }
 }
