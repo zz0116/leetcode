@@ -1,14 +1,12 @@
 package com.zyz.leetcode;
 
-import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) {
-        String s = "abc/def/g";
-        String[] split = s.split("/+");
-        String[] split1 = s.split("/");
+        ListNode n0 = new ListNode(4);
+        n0.next = new ListNode(3);
 
-        System.out.println(Arrays.equals(split, split1));
+        ListNode temp = null;
+        System.out.println(temp.next);
     }
 }
