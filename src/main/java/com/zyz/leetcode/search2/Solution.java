@@ -34,9 +34,6 @@ public class Solution {
                 min = mid;
             }
         }
-        if (nums[(int) min] == target || nums[(int) max] == target) {
-            return true;
-        }
-        return false;
+        return nums[(int) min] == target || nums[(int) max] == target;
     }
 }
