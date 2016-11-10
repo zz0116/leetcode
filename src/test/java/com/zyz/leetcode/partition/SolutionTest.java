@@ -18,8 +18,7 @@ public class SolutionTest {
         n2.next = n3;
         ListNode n4 = new ListNode(5);
         n3.next = n4;
-        ListNode n5 = new ListNode(1);
-        n4.next = n5;
+        n4.next = new ListNode(1);
         System.out.println(solution.partition(n0, 3));
     }
 
