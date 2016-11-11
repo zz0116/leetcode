@@ -5,16 +5,12 @@ package com.zyz.leetcode.merge;
  */
 public class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-//        int[] res = new int[m+n];
-//        for(int p=0, q=0, i=0; p<m && q<n;) {
-//            if(nums1[p]<nums2[q]) {
-//                res[i] = nums1[p];
-//                p++;
-//            }else {
-//                res[i] = nums2[q];
-//                q++;
-//            }
-//            i++;
-//        }
-//    }
+        int i, j;
+        for (j = 0; j < n; j++) {
+            for (i = m + j - 1; i > -1 && nums2[j] < nums1[i]; i--) {
+                nums1[i + 1] = nums1[i];
+            }
+            nums1[i + 1] = nums2[j];
+        }
     }
+}
