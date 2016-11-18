@@ -10,7 +10,7 @@ public class Solution2 {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         TreeNode cur = root;
-        TreeNode pre = null;
+        TreeNode pre;
         while (cur != null) {
             if (cur.left == null) {
                 res.add(cur.val);
