@@ -1,4 +1,4 @@
-package com.zyz.leetcode.levelOrder;
+package com.zyz.leetcode.zigzagLevelOrder;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -6,15 +6,16 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * Created by ZhangYuanzhuo on 2016/11/19.
+ * Created by ZhangYuanzhuo on 2016/11/30.
  */
 public class Solution {
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         if (root == null)
             return res;
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
+        int level = 0;
         while (!queue.isEmpty()) {
             int size = queue.size();
             List<Integer> perLevel = new ArrayList<>();
@@ -26,8 +27,21 @@ public class Solution {
                 if (head.right != null)
                     queue.offer(head.right);
             }
-            res.add(perLevel);
+            if (level % 2 == 0) {
+                res.add(perLevel);
+            } else {
+                res.add(reverse(perLevel));
+            }
+            level++;
         }
         return res;
+    }
+
+    private List<Integer> reverse(List<Integer> perLevel) {
+        List<Integer> reverse = new ArrayList<>();
+        for (int i = perLevel.size() - 1; i >= 0; i--) {
+            reverse.add(perLevel.get(i));
+        }
+        return reverse;
     }
 }
