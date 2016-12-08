@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="concurrency:war">
-    <output-path>D:/Program Files/IntelliJ/concurrency/target</output-path>
-    <root id="archive" name="concurrency-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="concurrency:war exploded" />
-    </root>
-  </artifact>
-</component>
