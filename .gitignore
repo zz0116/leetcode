@@ -3,3 +3,259 @@
 src/main/resources/
 target/generated-sources/
 target/generated-test-sources/
+.idea/dataSources.local.xml
+.idea/dataSources/
+.idea/inspectionProfiles/
+src/main/webapp/
+target/classes/com/zyz/leetcode/ListNode.class
+target/classes/com/zyz/leetcode/RandomListNode.class
+target/classes/com/zyz/leetcode/TreeNode.class
+target/classes/com/zyz/leetcode/addBinary/
+target/classes/com/zyz/leetcode/addTwoNumbers/ListNode.class
+target/classes/com/zyz/leetcode/buildTree/
+target/classes/com/zyz/leetcode/buildTree2/
+target/classes/com/zyz/leetcode/canCompleteCircuit/
+target/classes/com/zyz/leetcode/canJump/
+target/classes/com/zyz/leetcode/climbStairs/
+target/classes/com/zyz/leetcode/combinationSum/
+target/classes/com/zyz/leetcode/combinationSum2/
+target/classes/com/zyz/leetcode/combine/
+target/classes/com/zyz/leetcode/connect/
+target/classes/com/zyz/leetcode/connect2/
+target/classes/com/zyz/leetcode/convertToTitle/
+target/classes/com/zyz/leetcode/copyRandomList/
+target/classes/com/zyz/leetcode/countAndSay/
+target/classes/com/zyz/leetcode/deleteDuplicates/
+target/classes/com/zyz/leetcode/deleteDuplicates2/
+target/classes/com/zyz/leetcode/detectCycle/
+target/classes/com/zyz/leetcode/divide/
+target/classes/com/zyz/leetcode/exist/
+target/classes/com/zyz/leetcode/firstUniqChar/
+target/classes/com/zyz/leetcode/flatten/
+target/classes/com/zyz/leetcode/fourSum/
+target/classes/com/zyz/leetcode/generate/
+target/classes/com/zyz/leetcode/generateMatrix/
+target/classes/com/zyz/leetcode/generateParenthesis/
+target/classes/com/zyz/leetcode/generateTrees/
+target/classes/com/zyz/leetcode/getIntersectionNode/
+target/classes/com/zyz/leetcode/getPermutation/
+target/classes/com/zyz/leetcode/getRow/
+target/classes/com/zyz/leetcode/grayCode/
+target/classes/com/zyz/leetcode/groupAnagrams/
+target/classes/com/zyz/leetcode/hasCycle/
+target/classes/com/zyz/leetcode/hasPathSum/
+target/classes/com/zyz/leetcode/inorderTraversal/
+target/classes/com/zyz/leetcode/insertionSortList/
+target/classes/com/zyz/leetcode/intersection/
+target/classes/com/zyz/leetcode/isBalanced/
+target/classes/com/zyz/leetcode/isHappy/
+target/classes/com/zyz/leetcode/isPalindrome2/
+target/classes/com/zyz/leetcode/isSameTree/
+target/classes/com/zyz/leetcode/isSymmetric/
+target/classes/com/zyz/leetcode/isValid/
+target/classes/com/zyz/leetcode/isValidBST/
+target/classes/com/zyz/leetcode/isValidSudoku/
+target/classes/com/zyz/leetcode/ladderLength/
+target/classes/com/zyz/leetcode/lengthOfLastWord/
+target/classes/com/zyz/leetcode/letterCombinations/
+target/classes/com/zyz/leetcode/levelOrder/
+target/classes/com/zyz/leetcode/levelOrderBottom/
+target/classes/com/zyz/leetcode/majorityElement/
+target/classes/com/zyz/leetcode/maxDepth/
+target/classes/com/zyz/leetcode/maxProfit/
+target/classes/com/zyz/leetcode/maxProfit2/
+target/classes/com/zyz/leetcode/maxSubArray/
+target/classes/com/zyz/leetcode/merge/
+target/classes/com/zyz/leetcode/mergeIntervals/
+target/classes/com/zyz/leetcode/mergeTwoLists/
+target/classes/com/zyz/leetcode/minDepth/
+target/classes/com/zyz/leetcode/minPathSum/
+target/classes/com/zyz/leetcode/minStack/
+target/classes/com/zyz/leetcode/minimumTotal/
+target/classes/com/zyz/leetcode/multiply/
+target/classes/com/zyz/leetcode/myPow/
+target/classes/com
+/zyz/leetcode/mySqrt/
+target/classes/com/zyz/leetcode/nextPermutation/
+target/classes/com/zyz/leetcode/numDecodings/
+target/classes/com/zyz/leetcode/numTrees/
+target/classes/com/zyz/leetcode/partition/
+target/classes/com/zyz/leetcode/partition2/
+target/classes/com/zyz/leetcode/pathSum/
+target/classes/com/zyz/leetcode/permute/
+target/classes/com/zyz/leetcode/permuteUnique/
+target/classes/com/zyz/leetcode/plusOne/
+target/classes/com/zyz/leetcode/preorderTraversal/
+target/classes/com/zyz/leetcode/removeDuplicates/
+target/classes/com/zyz/leetcode/removeDuplicates2/
+target/classes/com/zyz/leetcode/removeElement/
+target/classes/com/zyz/leetcode/removeElements/
+target/classes/com/zyz/leetcode/removeNthFromEnd/ListNode.class
+target/classes/com/zyz/leetcode/reorderList/
+target/classes/com/zyz/leetcode/restoreIpAddresses/
+target/classes/com/zyz/leetcode/reverseBetween/
+target/classes/com/zyz/leetcode/reverseBits/
+target/classes/com/zyz/leetcode/reverseVowels/
+target/classes/com/zyz/leetcode/rightSideView/
+target/classes/com/zyz/leetcode/rob/
+target/classes/com/zyz/leetcode/rotate/
+target/classes/com/zyz/leetcode/rotateArray/
+target/classes/com/zyz/leetcode/rotateRight/
+target/classes/com/zyz/leetcode/search/
+target/classes/com/zyz/leetcode/search2/
+target/classes/com/zyz/leetcode/searchInsert/
+target/classes/com/zyz/leetcode/searchMatrix/
+target/classes/com/zyz/leetcode/searchRange/
+target/classes/com/zyz/leetcode/setZeroes/
+target/classes/com/zyz/leetcode/simplifyPath/
+target/classes/com/zyz/leetcode/singleNumber/
+target/classes/com/zyz/leetcode/singleNumber2/
+target/classes/com/zyz/leetcode/solve/
+target/classes/com/zyz/leetcode/sortColors/
+target/classes/com/zyz/leetcode/sortedArrayToBST/
+target/classes/com/zyz/leetcode/sortedListToBST/
+target/classes/com/zyz/leetcode/spiralOrder/
+target/classes/com/zyz/leetcode/strStr/
+target/classes/com/zyz/leetcode/subsets/
+target/classes/com/zyz/leetcode/subsetsWithDup/
+target/classes/com/zyz/leetcode/sumNumbers/
+target/classes/com/zyz/leetcode/swapPairs/
+target/classes/com/zyz/leetcode/titleToNumber/
+target/classes/com/zyz/leetcode/trailingZeroes/
+target/classes/com/zyz/leetcode/twoSum2/
+target/classes/com/zyz/leetcode/uniquePaths/
+target/classes/com/zyz/leetcode/uniquePathsWithObstacles/
+target/classes/com/zyz/leetcode/wordBreak/
+target/classes/com/zyz/leetcode/zigzagLevelOrder/
+target/test-classes/com/zyz/leetcode/addBinary/
+target/test-classes/com/zyz/leetcode/canCompleteCircuit/
+target/test-classes/com/zyz/leetcode/canJump/
+target/test-classes/com/zyz/leetcode/combinationSum/
+target/test-classes/com/zyz/leetcode/combinationSum2/
+target/test-classes/com/zyz/leetcode/combine/
+target/test-classes/com/zyz/leetcode/countAndSay/
+target/test-classes/com/zyz/leetcode/detectCycle/
+target/test-classes/com/zyz/leetcode/divide/
+target/test-classes/com/zyz/leetcode/exist/
+target/test-classes/com/zyz/leetcode/firstUniqChar/
+target/test-classes/com/zyz/leetcode/fourSum/
+target/test-classes/com/zyz/leetcode/generateMatrix/
+target/test-classes/com/zyz/leetcode/generateParenthesis/
+target/test-classes/com/zyz/leetcode/getPermutation/
+target/test-classes/com/zyz/leetcode/grayCode/
+target/test-classes/com/zyz/leetcode/groupAnagrams/
+target/test-classes/com/zyz/leetcode/hasCycle/
+target/test-classes/com/zyz/leetcode/isValid/
+target/test-classes/com/zyz/leetcode/letterCombinations/
+target/test-classes/com/zyz/leetcode/majorityElement/
+target/test-classes/com/zyz/leetcode/maxSubArray/
+target/test-classes/com/zyz/leetcode/mergeTwoLists/
+target/test-classes/com/zyz/leetcode/multiply/
+target/test-classes/com/zyz/leetcode/myPow/
+target/test-classes/com/zyz/leetcode/mySqrt/
+target/test-classes/com/zyz/leetcode/nextPermutation/
+target/test-classes/com/zyz/leetcode/numDecodings/
+target/test-classes/com/zyz/leetcode/partition/
+target/test-classes/com/zyz/leetcode/permute/
+target/test-classes/com/zyz/leetcode/permuteUnique/
+target/test-classes/com/zyz/leetcode/plusOne/
+target/test-classes/com/zyz/leetcode/removeElements/
+target/test-classes/com/zyz/leetcode/restoreIpAddresses/
+target/test-classes/com/zyz/leetcode/reverseVowels/
+target/test-classes/com/zyz/leetcode/rotate/
+target/test-classes/com/zyz/leetcode/rotateArray/
+target/test-classes/com/zyz/leetcode/rotateRight/
+target/test-classes/com/zyz/leetcode/search/
+target/test-classes/com/zyz/leetcode/searchRange/
+target/test-classes/com/zyz/leetcode/simplifyPath/
+target/test-classes/com/zyz/leetcode/sortColors/
+target/test-classes/com/zyz/leetcode/spiralOrder/
+target/test-classes/com/zyz/leetcode/subsetsWithDup/
+target/test-classes/com/zyz/leetcode/swapPairs/
+target/test-classes/com/zyz/leetcode/uniquePaths/
+target/test-classes/com/zyz/leetcode/wordBreak/
+Would
+remove target/test-classes/com/zyz/leetcode/hasCycle/
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen### Java template
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+### JetBrains template
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff:
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# Sensitive or high-churn files:
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+
+# Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# CMake
+cmake-build-debug/
+
+# Mongo Explorer plugin:
+.idea/**/mongoSettings.xml
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+/target/
+/.idea/
