@@ -1,6 +1,6 @@
 package com.zyz.leetcode.detectCycle;
 
-import java.util.ArrayList;
+import com.zyz.leetcode.ListNode;
 
 /**
  * Created by ZhangYuanzhuo on 2017/6/3.

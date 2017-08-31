@@ -1,5 +1,7 @@
 package com.zyz.leetcode.isValidBST;
 
+import com.zyz.leetcode.TreeNode;
+
 /**
  * Created by ZhangYuanzhuo on 2016/11/16.
  */

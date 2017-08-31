@@ -2,8 +2,6 @@ package com.zyz.leetcode.combine;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 /**
  * Created by ZhangYuanzhuo on 2016/11/7.
  */

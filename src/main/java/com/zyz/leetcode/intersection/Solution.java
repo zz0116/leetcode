@@ -1,9 +1,6 @@
 package com.zyz.leetcode.intersection;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 
 /**
  * Created by ZhangYuanzhuo on 2017/6/26.

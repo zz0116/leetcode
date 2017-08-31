@@ -1,8 +1,7 @@
 package com.zyz.leetcode.mergeTwoLists;
 
+import com.zyz.leetcode.ListNode;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by ZhangYuanzhuo on 2016/10/8.

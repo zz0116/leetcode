@@ -1,5 +1,7 @@
 package com.zyz.leetcode.deleteDuplicates;
 
+import com.zyz.leetcode.ListNode;
+
 /**
  * Created by ZhangYuanzhuo on 2016/11/9.
  */

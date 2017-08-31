@@ -1,5 +1,7 @@
 package com.zyz.leetcode.reorderList;
 
+import com.zyz.leetcode.ListNode;
+
 import java.util.ArrayList;
 
 /**

@@ -1,5 +1,7 @@
 package com.zyz.leetcode.copyRandomList;
 
+import com.zyz.leetcode.RandomListNode;
+
 /**
  * Created by ZhangYuanzhuo on 2017/5/21.
  */

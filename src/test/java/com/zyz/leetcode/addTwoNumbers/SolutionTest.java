@@ -1,5 +1,6 @@
 package com.zyz.leetcode.addTwoNumbers;
 
+import com.zyz.leetcode.ListNode;
 import org.junit.Test;
 
 /**
@@ -15,7 +16,7 @@ public class SolutionTest {
         l1.next.next = new ListNode(3);
         ListNode lSum = solution.addTwoNumbers(l1, l1);
 
-        System.out.println((lSum.val + "," + lSum.next.val + "," + lSum.next.next.val + "," + lSum.next.next.next.val));
+//        System.out.println((lSum.val + "," + lSum.next.val + "," + lSum.next.next.val + "," + lSum.next.next.next.val));
     }
 
 }

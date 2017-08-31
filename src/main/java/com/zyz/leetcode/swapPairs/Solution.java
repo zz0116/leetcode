@@ -1,5 +1,7 @@
 package com.zyz.leetcode.swapPairs;
 
+import com.zyz.leetcode.ListNode;
+
 /**
  * Created by ZhangYuanzhuo on 2016/10/10.
  */

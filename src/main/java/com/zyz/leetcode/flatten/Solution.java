@@ -1,5 +1,7 @@
 package com.zyz.leetcode.flatten;
 
+import com.zyz.leetcode.TreeNode;
+
 import java.util.ArrayList;
 
 /**

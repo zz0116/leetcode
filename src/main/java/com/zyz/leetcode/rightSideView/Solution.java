@@ -1,5 +1,7 @@
 package com.zyz.leetcode.rightSideView;
 
+import com.zyz.leetcode.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 

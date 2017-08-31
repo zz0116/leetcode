@@ -1,7 +1,5 @@
 package com.zyz.leetcode.majorityElement;
 
-import java.util.HashMap;
-
 /**
  * Created by ZhangYuanzhuo on 2017/6/11.
  */

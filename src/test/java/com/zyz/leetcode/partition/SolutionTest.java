@@ -1,5 +1,6 @@
 package com.zyz.leetcode.partition;
 
+import com.zyz.leetcode.ListNode;
 import org.junit.Test;
 
 /**

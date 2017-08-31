@@ -1,6 +1,6 @@
 package com.zyz.leetcode.hasPathSum;
 
-import java.util.ArrayList;
+import com.zyz.leetcode.TreeNode;
 
 /**
  * Created by ZhangYuanzhuo on 2016/12/14.

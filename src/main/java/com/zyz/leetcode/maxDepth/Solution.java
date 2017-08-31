@@ -1,5 +1,7 @@
 package com.zyz.leetcode.maxDepth;
 
+import com.zyz.leetcode.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

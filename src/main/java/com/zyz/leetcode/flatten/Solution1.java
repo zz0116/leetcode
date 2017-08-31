@@ -1,5 +1,7 @@
 package com.zyz.leetcode.flatten;
 
+import com.zyz.leetcode.TreeNode;
+
 /**
  * Created by ZhangYuanzhuo on 2016/12/18.
  */

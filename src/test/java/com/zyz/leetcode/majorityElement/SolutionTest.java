@@ -2,8 +2,6 @@ package com.zyz.leetcode.majorityElement;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 /**
  * Created by ZhangYuanzhuo on 2017/6/11.
  */

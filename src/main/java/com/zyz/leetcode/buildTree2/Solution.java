@@ -1,5 +1,7 @@
 package com.zyz.leetcode.buildTree2;
 
+import com.zyz.leetcode.TreeNode;
+
 /**
  * Created by ZhangYuanzhuo on 2016/12/5.
  */

@@ -1,5 +1,7 @@
 package com.zyz.leetcode.addTwoNumbers;
 
+import com.zyz.leetcode.ListNode;
+
 /**
  * Created by Zhang Yuanzhuo on 2016/9/30.
  */
