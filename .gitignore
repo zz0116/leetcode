@@ -1,4 +1,28 @@
 # Created by .ignore support plugin (hsz.mobi)
+.idea
+*.iml
+out
+gen### Java template
+*.log
+*.ctxt
+.mtj.tmp/
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+gen### Maven template
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+!/.mvn/wrapper/maven-wrapper.jar
 .idea/**/tasks.xml
 .idea/dictionaries
 .idea/**/dataSources/
@@ -18,18 +42,3 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
-*.class
-*.log
-*.ctxt
-.mtj.tmp/
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-hs_err_pid*
-.idea
-*.iml
-out
-gen

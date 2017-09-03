@@ -16,8 +16,8 @@ public class SolutionTest {
         System.out.println(solution.divide(1, -1));
         System.out.println(solution.divide(-6, 2));
         System.out.println(solution.divide(-2147483648, 2));
-        System.out.println(solution.divide(-2147483648, -2));
-        System.out.println(solution.divide(-1010369383, -2147483648));
+//        System.out.println(solution.divide(-2147483648, -2));
+//        System.out.println(solution.divide(-1010369383, -2147483648));
     }
 
 }
