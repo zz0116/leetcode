@@ -14,8 +14,8 @@ public class TreeNode {
 
     /**
      * 由二叉树的先序遍历数组还原二叉树
-     * @param nums
-     * @return
+     * @param nums 先序遍历
+     * @return 返回根节点
      */
     public static TreeNode createTreeFromArray(Integer[] nums) {
         return createTreeFromArray(nums, 0);
