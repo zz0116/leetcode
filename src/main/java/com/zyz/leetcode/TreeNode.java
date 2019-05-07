@@ -1,6 +1,7 @@
 package com.zyz.leetcode;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -25,7 +26,7 @@ public class TreeNode {
     }
 
     /**
-     * 由二叉树的先序遍历数组还原二叉树
+     * 由二叉树的层序遍历数组还原二叉树
      *
      * @return 根节点
      */
@@ -40,18 +41,27 @@ public class TreeNode {
         return tn;
     }
 
-    public Integer[] preOrderArray() {
+    // TODO: 有数据的层的null得add进去
+    public Integer[] levelOrderArray() {
         List<Integer> list = new ArrayList<>();
-        preOrderList(list, this);
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        queue.offer(this);
+        while (!queue.isEmpty()) {
+            TreeNode temp = queue.poll();
+            list.add(temp.val);
+            if (temp.left != null) queue.offer(temp.left);
+            if (temp.right != null) queue.offer(temp.right);
+        }
         return list.toArray(new Integer[]{});
     }
 
-    private void preOrderList(List<Integer> list, TreeNode node) {
-        if (node != null) {
-            preOrderList(list, node.left);
-            preOrderList(list, node.right);
-            list.add(node.val);
+    private int findDeep(TreeNode root) {
+        if (root != null) {
+            int leftDeep = findDeep(root.left);
+            int rightDeep = findDeep(root.right);
+            return leftDeep > rightDeep ? leftDeep + 1 : rightDeep + 1;
+        } else  {
+            return 0;
         }
     }
-
 }
